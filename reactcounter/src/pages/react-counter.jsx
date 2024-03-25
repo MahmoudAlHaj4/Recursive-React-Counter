@@ -17,8 +17,6 @@ const AddBtn = ({initial})=>{
 
             default:
         }
-    const checkRemove = ()=>{
-        console.log("checked 2")
     }
       return nested.length === 0 ? null : (
     <div className="counter-container">

@@ -7,7 +7,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path ="/" element= {<Home />}/>
-        <Route path ="reactcounter" element= {<AddBtn />}/>
+        <Route path ="/reactcounter" element= {<AddBtn  initial={1}/>}/>
       </Routes>
       </BrowserRouter>
     </div>

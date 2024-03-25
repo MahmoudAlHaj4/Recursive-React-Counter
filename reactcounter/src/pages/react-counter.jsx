@@ -20,12 +20,18 @@ const AddBtn = ({initial})=>{
     const checkRemove = ()=>{
         console.log("checked 2")
     }
-    return (
-        <div>
-            - <button onClick={checkadd}>+</button>
-                <button onClick={checkRemove}>-</button>
-        </div>
+      return nested.length === 0 ? null : (
+    <div className="counter-container">
+      <div className="counter">
+        - {initial}
+        <button onClick={() => addRemove("+")}>+</button>
+        <button onClick={() => addRemove("-")}>-</button>
+      </div>
 
-    )
+      {nested.map((element, index) => {
+        return <AddBtn initial={index + 1} key={index} />;
+      })}
+    </div>
+  );
 }
 export default AddBtn

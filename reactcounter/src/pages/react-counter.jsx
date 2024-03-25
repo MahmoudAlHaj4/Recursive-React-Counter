@@ -12,8 +12,8 @@ const AddBtn = ()=>{
     }
     return (
         <div>
-            - <button>+</button>
-                <button>-</button>
+            - <button onClick={checkadd}>+</button>
+                <button onClick={checkRemove}>-</button>
         </div>
 
     )
